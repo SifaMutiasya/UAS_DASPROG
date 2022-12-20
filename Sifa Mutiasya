@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout<<endl<<"\t UAS DASAR PEMOGRAMAN"<<endl;
+	cout<<"\t ____________________"<<endl<<endl;
+	cout<<" ====================================="<<endl;
+	cout<<" Nama  : Sifa Mutiasya Hendayana Puteri"<<endl;
+	cout<<" NIM   : 1227050125"<<endl;
+	cout<<" Kelas : IF-C"<<endl;
+	cout<<" ====================================="<<endl<<endl;
+
+//input banyaknya baris dan kolom 
+int ba,ko,total;
+int angka[50][50];
+cout<<" Input jumlah baris : ";
+cin>>ba;
+cout<<" Input jumlah Kolom : ";
+	cin>>ko;
+
+//isi nilai dari kolom yang 
+cout<<endl;
+for (int i=1; i<=ba; i++){
+	for (int j=1; j<=ko; j++ ){
+		cout<< " Baris ke "<<i<<" , Kolom ke "<<j<<" : ";
+		cin>>angka[i][j];
+	}
+	cout<<endl;
+}
+//hasil baris dan kolom dari angka yang telah diinputkan
+cout<<" Hasil baris dan kolom yang diinputkan"<<endl;
+for (int i=1; i<=ba; i++){
+	for (int j=1; j<=ko; j++){
+		cout<<" "<<angka[i][j]<<" ";
+	}
+	cout<<endl;
+}
+cout<<endl<<" Soal UAS No 1."<<endl;
+//hasil pertukaran baris dan kolom
+cout<<" Hasil pertukaran baris dan kolom : "<<endl;
+for (int i=1; i<=ko; i++){
+	for (int j=1; j<=ba; j++){
+		cout<<" "<<angka[j][i]<<" ";
+	}
+	cout<<endl;
+}
+cout<<endl<<" Soal UAS NO 2."<<endl;
+  	cout << " Bilangan yang habis di bagi 3,5,7 : "<<endl;
+  	// Mencetak bilangan yang habis di bagi 3
+for (int i = 1; i <= ko; i++){
+for (int j = 1; j <= ba; j++){
+if (angka[i][j] % 3 == 0 && angka [i][j] % 5 == 0 && angka [i][j] %7 ==0) 
+//menampilkan bilangan yang habis dibagi 3,5 dan 7
+cout << " "<<angka[i][j] << " "; 
+
+	}
+}
+	
+  return 0;
+}
