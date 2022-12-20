@@ -62,10 +62,13 @@ for (int j = 1; j <= ba; j++){
 if (angka[i][j] % 3 == 0 && angka [i][j] % 5 == 0 && angka [i][j] %7 ==0) 
 //menampilkan bilangan yang habis dibagi 3,5 dan 7
 cout << " "<<angka[i][j] << " "; 
+
 	}
 }
+	
   return 0;
 }
+
 
 
 ## Output
